@@ -1,0 +1,11 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <h1 style="position: relative;left: 20%;">New questions</h1>
+{% for question in questions %}
+{% include "incl/single_question.html" %}
+{% endfor %}
+    {% include "incl/pagination.html" %}
+{% endblock content %}

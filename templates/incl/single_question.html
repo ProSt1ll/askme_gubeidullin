@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="row question  ">
+    <div class="col-3">
+        <h4>{{ question.title }}</h4>
+        <img class="avatar" src="../static/img/image.jpg" alt="">
+        <div class="likes">
+            <span class="lcounter">  5</span>
+            <img class="buttonlike" src="../static/img/buttonup.jpg" alt="">
+            <img class="buttonlike" src="../static/img/buttondown.jpg" alt="">
+        </div>
+    </div>
+    <div class="col-9">
+    <a class="question_tilte" href="{% url "question" question.number %}">{{ question.text }}</a>
+        <div class="quest_info">
+            <answ>Answers: 5</answ>
+            <tagss>Tags: </tagss>
+            <a href="">cook</a>
+            <a href="">dinner</a>
+        </div>
+        </div>
+    </div>

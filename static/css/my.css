@@ -1,0 +1,58 @@
+main > .container {
+  padding: 60px 15px 0;
+}
+.question {
+  margin: 30px;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 5px;
+}
+.smallavatar{
+  position: relative;
+  left: 6px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.avatar{
+  position: relative;
+  left: 6px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.lcounter{
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.quest_info{
+  position: relative;
+  bottom: -109px;
+}
+
+.buttonlike {
+    width: 30px;
+    height: 30px;
+}
+.userav{
+  color: #cbccce;
+  margin-left: 40px;
+}
+
+.quest_info{
+  position: relative;
+  bottom: -109px;
+}
+
+.form-floating{
+  margin-bottom: 20px;
+}

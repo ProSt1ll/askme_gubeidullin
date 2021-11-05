@@ -1,0 +1,29 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<main class="form-signin">
+  <form style="margin: 30px">
+    <h1 style="position:relative;left: 40%;margin: 10px;">Sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" href="">Sign in</button>
+      <a class="w-100 btn btn-lg btn-secondary" href="{% url "registration" %}" role="button">Registration</a>
+  </form>
+</main>
+{% endblock content %}

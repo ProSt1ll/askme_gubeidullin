@@ -1,0 +1,44 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <main class="form-signin">
+        <form style="margin: 30px" enctype="multipart/form-data">
+            <h1 style="position:relative;left: 40%;margin: 10px;">Registration</h1>
+
+            <div class="form-floating">
+                <input type="Login" class="form-control" id="floatingInput" placeholder="Egor_Nagibator">
+                <label for="floatingInput">Login</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="Email" class="form-control" id="floatingInput" placeholder="mail@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="Nickname" class="form-control" id="floatingInput" placeholder="better0fdead">
+                <label for="floatingInput">Nickname</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Repeat password</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Repeat password</label>
+            </div>
+            Upload avatar
+            <input style="margin: 10px" type="file">
+            <button class="w-100 btn btn-lg btn-primary" type="submit" href="../">Register!</button>
+        </form>
+    </main>
+{% endblock content %}
