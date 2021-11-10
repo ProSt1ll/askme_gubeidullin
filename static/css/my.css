@@ -34,12 +34,9 @@ main > .container {
   padding-left: 7px;
   padding-right: 7px;
 }
-.quest_info{
-  position: relative;
-  bottom: -109px;
-}
 
-.buttonlike {
+
+.buttonlikeavat {
     width: 30px;
     height: 30px;
 }
@@ -49,10 +46,20 @@ main > .container {
 }
 
 .quest_info{
-  position: relative;
-  bottom: -109px;
+ margin-top: 60px;
 }
 
 .form-floating{
   margin-bottom: 20px;
+}
+
+.pop_tag{
+  margin: 20px;
+
+}
+.buttonlike {
+    width: 40px;
+    height: 40px;
+    padding-left: 2px;
+
 }

@@ -3,23 +3,28 @@
 
 
 {% block content %}
-      <h1 style="position: relative">New questions</h1>
-          <div class="row question  ">
-            <div class="col-3">
-            <h4>Question 1</h4>
-              <img class="avatar" src="../static/img/imae.jpg" alt="">
-                <div class="likes">
-                    <span class="lcounter">  5</span>
-                    <img class="buttonlike" src="../static/img/buttonup.jpg" alt="">
-                    <img class="buttonlike" src="../static/img/buttondown.jpg" alt="">
-                </div>
+
+{% include "incl/single_question.html" %}
+
+
+ <hr>
+    {% for comment in comments %}
+        {% include "incl/answers.html" %}
+    {% endfor %}
+    <hr>
+    <div class="row" style="text-align: left;">
+        <form>
+            <div class="mb-3">
+                            <textarea class="form-control field" style="height: 100px;"
+                                      placeholder="Enter your answer here"></textarea>
             </div>
-            <div class="col-9">
 
-            </div>
-          </div>
+            <button type="submit" class="btn btn-outline-dark" style="margin: -5px 0px 15px;">Submit
+            </button>
+        </form>
 
+    </div>
 
-
+   {% include "incl/pagination.html" %}
 
 {% endblock content %}

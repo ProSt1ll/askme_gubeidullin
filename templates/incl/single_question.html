@@ -3,20 +3,25 @@
 <div class="row question  ">
     <div class="col-3">
         <h4>{{ question.title }}</h4>
-        <img class="avatar" src="../static/img/image.jpg" alt="">
+        <img class="avatar" src="{% static "img/image.jpg" %}" alt="">
         <div class="likes">
-            <span class="lcounter">  5</span>
-            <img class="buttonlike" src="../static/img/buttonup.jpg" alt="">
-            <img class="buttonlike" src="../static/img/buttondown.jpg" alt="">
+            <span class="lcounter">{{ question.votes.likes.count }}</span>
+            <button class="buttonlike btn btn-primary-outline" ><img class="buttonlikeavat" src="{% static "img/buttonup.jpg" %}" alt=""></button>
+            <button class="buttonlike btn btn-primary-outline"> <img class="buttonlikeavat" src="{% static "img/buttondown.jpg" %}" alt=""></button>
         </div>
     </div>
     <div class="col-9">
-    <a class="question_tilte" href="{% url "question" question.number %}">{{ question.text }}</a>
+    <a class="question_tilte" href="{% url "question" qid=question.id %}">{{ question.question_title}}</a>
+        <div>
+            {{ question.question_text }}
+        </div>
         <div class="quest_info">
-            <answ>Answers: 5</answ>
+            <answ>Answers:5</answ>
             <tagss>Tags: </tagss>
-            <a href="">cook</a>
-            <a href="">dinner</a>
+                    {% for tag in question.tags.all %}
+                            <a class="pop-tag" href="{% url 'tag' tid=tag %}" class="btn-light btn-sm"> {{ tag }} </a>
+                        {% endfor %}
+
         </div>
         </div>
     </div>

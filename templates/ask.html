@@ -1,0 +1,31 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <form>
+    <h2> New Question </h2>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Title:</label>
+        <textarea type="text" class="form-control" id="formGroupExampleInput2" rows="8"
+                  placeholder="" style="height: 40px;width: 95%;"></textarea>
+    </div>
+    <div class="row"></div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2"> Text:</label>
+        <textarea type="text" class="form-control" id="formGroupExampleInput2" rows="8"
+                  placeholder="" style="width: 95%;"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Tags:</label>
+        <textarea type="text" class="form-control" id="formGroupExampleInput2" rows="8"
+                  placeholder="" style="height: 40px;width: 95%;"></textarea>
+    </div>
+    <div class="answer_btn">
+        <button class="btn btn-success" type="submit" style="margin: 10px 10px 10px 0px">ASK!</button>
+    </div>
+    <form>
+
+
+
+{% endblock content %}
